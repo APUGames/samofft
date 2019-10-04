@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1563,
-        "worldScrollY": 995,
-        "zoom": 400,
+        "worldScrollX": 898,
+        "worldScrollY": 79,
+        "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
         "customColorsDark": "306850",
@@ -166,14 +166,93 @@
                     }
                 },
                 {
+                    "id": "9a984322-09bf-4d3d-9640-4994c35f93d2",
+                    "command": "EVENT_AWAIT_INPUT",
+                    "args": {
+                        "input": [
+                            "a",
+                            "start"
+                        ]
+                    }
+                },
+                {
+                    "id": "a0bcf1e2-ffa9-4abd-b264-d5cb11d9b17a",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "0728e17c-cf15-4420-9eca-ea8ce4219c98",
+                        "x": 9,
+                        "y": 16,
+                        "direction": "up",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
                     "id": "ec55346e-13c0-42c3-ab8c-187df4a6b961",
                     "command": "EVENT_END"
                 }
             ]
+        },
+        {
+            "name": "Room 1",
+            "backgroundId": "4a0141b0-6fd2-41aa-915d-fe737dacde17",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                240,
+                255,
+                255,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                248,
+                255,
+                255
+            ],
+            "id": "0728e17c-cf15-4420-9eca-ea8ce4219c98",
+            "x": 733,
+            "y": 157,
+            "actors": [],
+            "triggers": []
         }
     ],
     "_version": "1.2.0",
-    "author": "tsamoff",
+    "author": "Tim Samoff",
     "name": "You Are the Key",
     "variables": [],
     "backgrounds": [
@@ -185,17 +264,27 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "hall_001.png",
-            "_v": 1570214363758
+            "_v": 1570228181195
         },
         {
-            "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
-            "name": "placeholder",
+            "id": "4a0141b0-6fd2-41aa-915d-fe737dacde17",
+            "name": "room_001",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "placeholder.png",
-            "_v": 1570211983573
+            "filename": "room_001.png",
+            "_v": 1570228368775
+        },
+        {
+            "id": "b2df0487-d1c7-437a-859b-41789f914b7b",
+            "name": "room_001_tmp7286",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "room_001_tmp7286",
+            "_v": 1570228368752
         },
         {
             "id": "12f5c46e-242b-47c8-b029-487773582c34",
@@ -205,41 +294,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1570215942010
+            "_v": 1570228181195
         }
     ],
     "spriteSheets": [
-        {
-            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-            "name": "actor",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "actor.png",
-            "_v": 1570211983573
-        },
-        {
-            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-            "name": "actor_animated",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "actor_animated.png",
-            "_v": 1570211983573
-        },
         {
             "id": "6085d9b8-55b0-440c-8c4b-4ccf4c0b629b",
             "name": "key",
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "key.png",
-            "_v": 1570213299636
-        },
-        {
-            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-            "name": "static",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "static.png",
-            "_v": 1570211983573
+            "_v": 1570228181195
         }
     ],
     "music": [
@@ -247,7 +312,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1570211983570
+            "_v": 1570228181193
         }
     ]
 }
