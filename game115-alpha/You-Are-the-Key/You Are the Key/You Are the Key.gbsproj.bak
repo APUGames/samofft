@@ -1,0 +1,318 @@
+{
+    "settings": {
+        "showCollisions": true,
+        "showConnections": true,
+        "worldScrollX": 898,
+        "worldScrollY": 79,
+        "zoom": 200,
+        "customColorsWhite": "E0F8D0",
+        "customColorsLight": "88C070",
+        "customColorsDark": "306850",
+        "customColorsBlack": "081820",
+        "startX": 9,
+        "startY": 12,
+        "startDirection": "down",
+        "startSceneId": "cbf7ec88-fcd2-4e65-b101-d7d8d6cf2146",
+        "playerSpriteSheetId": "6085d9b8-55b0-440c-8c4b-4ccf4c0b629b"
+    },
+    "scenes": [
+        {
+            "name": "Hallway 1",
+            "backgroundId": "4d9701fd-e830-4c40-b1e5-7e710752992a",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                240,
+                0,
+                128,
+                25,
+                0,
+                8,
+                1,
+                128,
+                16,
+                0,
+                8,
+                1,
+                128,
+                16,
+                0,
+                8,
+                1,
+                128,
+                16,
+                0,
+                8,
+                1,
+                128,
+                16,
+                0,
+                8,
+                1,
+                128,
+                16,
+                0,
+                8,
+                1,
+                128,
+                16,
+                0,
+                248,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "cbf7ec88-fcd2-4e65-b101-d7d8d6cf2146",
+            "x": 511,
+            "y": 359,
+            "actors": [],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "e2737c75-d5ad-480c-92eb-5516b2433dc7",
+                    "x": 9,
+                    "y": 2,
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "9e173289-ae52-4d83-b3bf-c7df079b8664",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "22861922-e1d3-4be5-8a53-d518fd204675",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "ec55346e-13c0-42c3-ab8c-187df4a6b961",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Title",
+            "backgroundId": "12f5c46e-242b-47c8-b029-487773582c34",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "22861922-e1d3-4be5-8a53-d518fd204675",
+            "x": 512,
+            "y": 159,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "2fcd2d1e-64e2-43eb-8e15-395828882dab",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "9a984322-09bf-4d3d-9640-4994c35f93d2",
+                    "command": "EVENT_AWAIT_INPUT",
+                    "args": {
+                        "input": [
+                            "a",
+                            "start"
+                        ]
+                    }
+                },
+                {
+                    "id": "a0bcf1e2-ffa9-4abd-b264-d5cb11d9b17a",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "0728e17c-cf15-4420-9eca-ea8ce4219c98",
+                        "x": 9,
+                        "y": 16,
+                        "direction": "up",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
+                    "id": "ec55346e-13c0-42c3-ab8c-187df4a6b961",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Room 1",
+            "backgroundId": "4a0141b0-6fd2-41aa-915d-fe737dacde17",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                240,
+                255,
+                255,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
+                128,
+                1,
+                0,
+                248,
+                255,
+                255
+            ],
+            "id": "0728e17c-cf15-4420-9eca-ea8ce4219c98",
+            "x": 733,
+            "y": 157,
+            "actors": [],
+            "triggers": []
+        }
+    ],
+    "_version": "1.2.0",
+    "author": "Tim Samoff",
+    "name": "You Are the Key",
+    "variables": [],
+    "backgrounds": [
+        {
+            "id": "4d9701fd-e830-4c40-b1e5-7e710752992a",
+            "name": "hall_001",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "hall_001.png",
+            "_v": 1570228181195
+        },
+        {
+            "id": "4a0141b0-6fd2-41aa-915d-fe737dacde17",
+            "name": "room_001",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "room_001.png",
+            "_v": 1570228368775
+        },
+        {
+            "id": "b2df0487-d1c7-437a-859b-41789f914b7b",
+            "name": "room_001_tmp7286",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "room_001_tmp7286",
+            "_v": 1570228368752
+        },
+        {
+            "id": "12f5c46e-242b-47c8-b029-487773582c34",
+            "name": "title",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "title.png",
+            "_v": 1570228181195
+        }
+    ],
+    "spriteSheets": [
+        {
+            "id": "6085d9b8-55b0-440c-8c4b-4ccf4c0b629b",
+            "name": "key",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "key.png",
+            "_v": 1570228181195
+        }
+    ],
+    "music": [
+        {
+            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
+            "name": "template",
+            "filename": "template.mod",
+            "_v": 1570228181193
+        }
+    ]
+}
