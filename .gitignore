@@ -1,8 +1,6 @@
 # Better Unity .gitignore
 # This will only upload specific Git files and three crucial Unity directories.
 # It will also ignore Mac-generated meta files.
-/*
-/*/
 
 # Keep these Git files
 !.gitignore
@@ -90,4 +88,4 @@ Intermediate/*
 Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
-DerivedDataCache/* 
+DerivedDataCache/*
