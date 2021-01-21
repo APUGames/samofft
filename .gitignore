@@ -13,12 +13,12 @@
 [Pp]ackages/
 
 # Keep these Unity generated directories
-!/Assets/
-!/ProjectSettings/
-!/UserSettings/
+!Assets/
+!ProjectSettings/
+!UserSettings/
 
 # Keep this directory
-!/GameBuilds/
+!GameBuilds/
 
 # Ignore these Visual Studio / MonoDevelop generated files
 ExportedObj/
