@@ -44,6 +44,15 @@ TagManager:
   - name: Background
     uniqueID: 3309774425
     locked: 0
-  - name: Ground
+  - name: StartEnd
+    uniqueID: 2277052863
+    locked: 0
+  - name: Traps
+    uniqueID: 983144953
+    locked: 0
+  - name: Rule Ground
     uniqueID: 4127536709
+    locked: 0
+  - name: Manual Ground
+    uniqueID: 3715463489
     locked: 0

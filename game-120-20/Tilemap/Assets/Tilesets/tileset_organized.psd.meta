@@ -137,6 +137,12 @@ TextureImporter:
   - first:
       213: 3538540255131195100
     second: tileset_organized_44
+  - first:
+      213: 8956589239002699942
+    second: tileset_organized_45
+  - first:
+      213: -1837973186742596264
+    second: tileset_organized_46
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1073,8 +1079,8 @@ TextureImporter:
       name: tileset_organized_38
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1094,7 +1100,7 @@ TextureImporter:
       name: tileset_organized_39
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -1115,7 +1121,7 @@ TextureImporter:
       name: tileset_organized_40
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 0
         width: 32
         height: 32
@@ -1136,7 +1142,7 @@ TextureImporter:
       name: tileset_organized_41
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 0
         width: 32
         height: 32
@@ -1157,7 +1163,7 @@ TextureImporter:
       name: tileset_organized_42
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
         width: 32
         height: 32
@@ -1178,7 +1184,7 @@ TextureImporter:
       name: tileset_organized_43
       rect:
         serializedVersion: 2
-        x: 160
+        x: 128
         y: 0
         width: 32
         height: 32
@@ -1199,7 +1205,7 @@ TextureImporter:
       name: tileset_organized_44
       rect:
         serializedVersion: 2
-        x: 192
+        x: 160
         y: 0
         width: 32
         height: 32
@@ -1212,6 +1218,48 @@ TextureImporter:
       bones: []
       spriteID: cd6d3823d9b6b1130800000000000000
       internalID: 3538540255131195100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_organized_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a897d575723c4c70800000000000000
+      internalID: 8956589239002699942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_organized_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dc389ef153e76e0800000000000000
+      internalID: -1837973186742596264
       vertices: []
       indices: 
       edges: []
