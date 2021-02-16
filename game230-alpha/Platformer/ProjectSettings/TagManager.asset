@@ -44,7 +44,7 @@ TagManager:
   - name: Background
     uniqueID: 635370761
     locked: 0
-  - name: Water
+  - name: Hazards
     uniqueID: 3744773165
     locked: 0
   - name: Foreground
