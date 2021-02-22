@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     [SerializeField] float climbSpeed = 5.0f;
     float gravityScaleAtStart;
 
+    [SerializeField] private AudioClip jumpSound;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,8 @@ public class Player : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         playerBodyCollider = GetComponent<CapsuleCollider2D>();
         playerFeetCollider = GetComponent<BoxCollider2D>();
+
+        audioSource = GetComponent<AudioSource>();
 
         gravityScaleAtStart = playerCharacter.gravityScale;
     }
@@ -72,6 +76,8 @@ public class Player : MonoBehaviour
             // Get new Y velocity based on a controllable variable
             Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
             playerCharacter.velocity += jumpVelocity;
+            
+            audioSource.PlayOneShot(jumpSound, 0.7F);
         }
     }
     private void Climb()
