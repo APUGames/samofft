@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     Animator playerAnimator;
     CapsuleCollider2D playerBodyCollider;
     BoxCollider2D playerFeetCollider;
+    CircleCollider2D playerHeadCollider;
 
     [SerializeField] float runSpeed = 5.0f;
     [SerializeField] float jumpSpeed = 5.0f;
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private AudioClip jumpSound;
     AudioSource audioSource;
+    private bool jump;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class Player : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         playerBodyCollider = GetComponent<CapsuleCollider2D>();
         playerFeetCollider = GetComponent<BoxCollider2D>();
+        playerHeadCollider = GetComponent<CircleCollider2D>();
 
         audioSource = GetComponent<AudioSource>();
 
@@ -37,6 +40,7 @@ public class Player : MonoBehaviour
         FlipSprite();
         Jump();
         Climb();
+        DetectCeiling();
     }
     private void Run()
     {
@@ -65,19 +69,22 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground")))
+        if (!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground")))
         {
             // Will stop this function if false
             return;
         }
 
-        if(Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             // Get new Y velocity based on a controllable variable
             Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
             playerCharacter.velocity += jumpVelocity;
-            
-            audioSource.PlayOneShot(jumpSound, 0.7F);
+
+            if (jump)
+            {
+                audioSource.PlayOneShot(jumpSound, 0.7F);
+            }
         }
     }
     private void Climb()
@@ -99,6 +106,18 @@ public class Player : MonoBehaviour
 
         bool vSpeed = Mathf.Abs(playerCharacter.velocity.y) > Mathf.Epsilon;
         playerAnimator.SetBool("climb", vSpeed);
+    }
+
+    private void DetectCeiling()
+    {
+        if (!playerHeadCollider.IsTouchingLayers(LayerMask.GetMask("Foreground")))
+        {
+            jump = true;
+        }
+        else
+        {
+            jump = false;
+        }
     }
 
 }
