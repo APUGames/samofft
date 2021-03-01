@@ -11,12 +11,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Interactables
   - 
   - Foreground
   - Player
   - Climbing
-  - 
+  - Hazards
   - Background
   - Enemy
   - 
@@ -55,6 +55,12 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 1308679931
+    locked: 0
+  - name: Interactables
+    uniqueID: 1671395731
+    locked: 0
+  - name: Hazards
+    uniqueID: 1580942683
     locked: 0
   - name: Enemy
     uniqueID: 4069725947

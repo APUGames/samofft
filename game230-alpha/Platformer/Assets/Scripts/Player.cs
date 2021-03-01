@@ -13,11 +13,15 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 5.0f;
     [SerializeField] float jumpSpeed = 5.0f;
     [SerializeField] float climbSpeed = 5.0f;
+    [SerializeField] Vector2 deathSeq = new Vector2(25f, 25f);
     float gravityScaleAtStart;
 
-    [SerializeField] private AudioClip jumpSound;
     AudioSource audioSource;
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip jumpSound;
     private bool jump;
+
+    bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -36,11 +40,18 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isAlive)
+        {
+            // Return halts the method
+            return;
+        }
+
         Run();
         FlipSprite();
         Jump();
         Climb();
         DetectCeiling();
+        Die();
     }
     private void Run()
     {
@@ -87,6 +98,7 @@ public class Player : MonoBehaviour
             }
         }
     }
+
     private void Climb()
     {
         if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
@@ -117,6 +129,17 @@ public class Player : MonoBehaviour
         else
         {
             jump = false;
+        }
+    }
+
+    private void Die()
+    {
+        if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
+        {
+            audioSource.PlayOneShot(deathSound, 0.7F);
+            isAlive = false;
+            playerAnimator.SetTrigger("die");
+            GetComponent<Rigidbody2D>().velocity = deathSeq;
         }
     }
 
