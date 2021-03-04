@@ -141,7 +141,7 @@ MonoBehaviour:
   jumpSpeed: 25
   climbSpeed: 5
   deathSeq: {x: 10, y: 10}
-  deathSound: {fileID: 8300000, guid: 2aa501f02fe8ecf4391eae2907fd61db, type: 3}
+  deathSound: {fileID: 8300000, guid: 50f93d3e8e52f3e4c83010d18d32ac64, type: 3}
   jumpSound: {fileID: 8300000, guid: b97685251ea299e4bac540519d7f8796, type: 3}
 --- !u!61 &1473012369
 BoxCollider2D:
