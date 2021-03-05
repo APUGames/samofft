@@ -140,7 +140,7 @@ MonoBehaviour:
   runSpeed: 5
   jumpSpeed: 25
   climbSpeed: 5
-  deathSeq: {x: 10, y: 10}
+  deathSeq: {x: 2, y: 30}
   deathSound: {fileID: 8300000, guid: 50f93d3e8e52f3e4c83010d18d32ac64, type: 3}
   jumpSound: {fileID: 8300000, guid: b97685251ea299e4bac540519d7f8796, type: 3}
 --- !u!61 &1473012369

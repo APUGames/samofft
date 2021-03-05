@@ -5,7 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Platformer.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/01 Start.unity
+    guid: 28cd4e2288bf5b3479dbcd7463b05040
+  - enabled: 1
+    path: Assets/Scenes/02 Tut.unity
+    guid: fe0a2da6d612e5740b8c95acf714dc8c
+  - enabled: 1
+    path: Assets/Scenes/03 Spikes.unity
+    guid: 6d22cb7a91b1f9d4c89b3bd95006b346
+  - enabled: 1
+    path: Assets/Scenes/04 Enemies.unity
+    guid: 6670b2fa86330f34599a5e9845668365
+  - enabled: 1
+    path: Assets/Scenes/05 Water.unity
+    guid: ce6320df5537b3f41aa88e41050b7272
+  - enabled: 1
+    path: Assets/Scenes/06 End.unity
+    guid: 96a0fd46a51d1354f8ed438c01eb2134
   m_configObjects: {}
