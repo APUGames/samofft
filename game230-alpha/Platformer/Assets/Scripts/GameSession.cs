@@ -68,4 +68,14 @@ public class GameSession : MonoBehaviour
 
         lives.text = playerLives.ToString();
     }
+
+    public void AddLife()
+    {
+        int tmp = playerScore % 700;
+        if (tmp == 0 || tmp == 700)
+        {
+            playerLives++;
+            lives.text = playerLives.ToString();
+        }
+    }
 }

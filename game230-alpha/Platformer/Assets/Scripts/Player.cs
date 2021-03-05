@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     float gravityScaleAtStart;
 
     AudioSource audioSource;
-    [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip jumpSound;
     private bool jump;
 
@@ -94,7 +93,7 @@ public class Player : MonoBehaviour
 
             if (jump)
             {
-                audioSource.PlayOneShot(jumpSound, 0.7F);
+                audioSource.PlayOneShot(jumpSound, 0.7f);
             }
         }
     }
@@ -136,12 +135,10 @@ public class Player : MonoBehaviour
     {
         if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
         {
-            audioSource.PlayOneShot(deathSound, 0.7F);
             isAlive = false;
             playerAnimator.SetTrigger("die");
             GetComponent<Rigidbody2D>().velocity = deathSeq;
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
-
 }
